@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&display=swap");
+@import "variables";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $shelby-charcoal;
+  color: $shelby-offwhite;
+  font-family: $font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: $shelby-gold;
+  color: $shelby-charcoal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  max-width: $max-w-7xl;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-gold { color: $shelby-gold; }
+.text-gray { color: $shelby-gray; }
+.text-offwhite { color: $shelby-offwhite; }
+.font-serif { font-family: $font-serif; }
+.font-sans { font-family: $font-sans; }
+.bg-slate { background-color: $shelby-slate; }
+.bg-charcoal { background-color: $shelby-charcoal; }

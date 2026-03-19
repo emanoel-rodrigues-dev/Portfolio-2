@@ -1,0 +1,96 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+  background-color: $shelby-slate;
+  padding: 5rem 0; // py-20
+  border-top: 1px solid rgba($shelby-gold, 0.2);
+}
+
+.container {
+  max-width: $max-w-7xl;
+  margin: 0 auto;
+  padding: 0 1.5rem; // px-6
+  text-align: center;
+}
+
+.title {
+  color: $shelby-gold;
+  font-family: $font-serif;
+  font-size: 2.25rem; // text-4xl
+  margin-bottom: 1rem; // mb-4
+  font-style: italic;
+}
+
+.quote {
+  color: $shelby-gray;
+  margin-bottom: 3rem; // mb-12
+  max-width: 28rem; // max-w-md
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem; // gap-12
+  margin-bottom: 4rem; // mb-16
+  
+  @include respond-to($md) {
+    flex-direction: row;
+  }
+}
+
+.contactGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLabel {
+  display: block;
+  font-size: 10px; // text-[10px]
+  text-transform: uppercase;
+  letter-spacing: 0.1em; // tracking-widest
+  color: $shelby-gold;
+  margin-bottom: 0.25rem; // mb-1
+}
+
+.contactLink {
+  font-size: 1.5rem; // text-2xl
+  font-family: $font-serif;
+  transition: color 0.3s;
+  
+  &:hover {
+    color: $shelby-gold;
+  }
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; // space-x-6
+  margin-bottom: 3rem; // mb-12
+}
+
+.socialLink {
+  color: $shelby-gray;
+  transition: all 0.3s;
+  display: inline-block;
+  
+  &:hover {
+    color: $shelby-gold;
+    transform: translateY(-0.25rem); // -translate-y-1
+  }
+}
+
+.copyright {
+  padding-top: 3rem; // pt-12
+  border-top: 1px solid rgba($white, 0.05);
+  font-size: 10px; // text-[10px]
+  text-transform: uppercase;
+  letter-spacing: 0.4em; // tracking-[0.4em]
+  color: rgba($shelby-gray, 0.5);
+}

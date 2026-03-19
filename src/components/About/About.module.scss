@@ -1,0 +1,200 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.about {
+  margin-bottom: 8rem; // mb-32
+}
+
+.grid {
+  display: grid;
+  gap: 4rem; // gap-16
+  align-items: center;
+
+  @include respond-to($md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.textContent {
+  // order-2 md:order-1
+  order: 2;
+  @include respond-to($md) { order: 1; }
+}
+
+.imageContent {
+  // order-1 md:order-2
+  order: 1;
+  display: flex;
+  justify-content: center;
+  @include respond-to($md) { order: 2; }
+}
+
+.sectionTitle {
+  color: $shelby-gold;
+  font-family: $font-serif;
+  font-size: 1.875rem; // text-3xl
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titleLine {
+  height: 1px;
+  width: 3rem; // w-12
+  background-color: $shelby-gold;
+}
+
+.description {
+  color: $shelby-gray;
+  font-size: 1.125rem; // text-lg
+  line-height: 1.625; // leading-relaxed
+  
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.highlight {
+  color: $shelby-offwhite;
+  font-weight: 600; // font-semibold
+}
+
+.goldHighlight {
+  color: $shelby-gold;
+  font-style: italic;
+}
+
+.rolesGrid {
+  margin-top: 2.5rem; // mt-10
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.roleCard {
+  padding: 1rem;
+  border-left: 1px solid rgba($shelby-gold, 0.3);
+  background-color: rgba($white, 0.05);
+}
+
+.roleTitle {
+  display: block;
+  font-size: 1.5rem; // text-2xl
+  font-family: $font-serif;
+  color: $shelby-gold;
+}
+
+.roleSubtitle {
+  font-size: 0.75rem; // text-xs
+  text-transform: uppercase;
+  letter-spacing: 0.1em; // tracking-widest
+  color: $shelby-gray;
+}
+
+// Image Section Styles
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 24rem; // max-w-sm
+  margin: 0 auto;
+}
+
+.toggleWrapper {
+  display: flex;
+  background-color: rgba($shelby-slate, 0.8);
+  padding: 0.25rem;
+  border: 1px solid rgba($shelby-gold, 0.4);
+  border-radius: 0.125rem; // rounded-sm
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+}
+
+.toggleBtn {
+  padding: 0.5rem 1.25rem;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.btnActive {
+  background-color: $shelby-gold;
+  color: $shelby-charcoal;
+}
+
+.btnInactive {
+  color: $shelby-gray;
+  &:hover {
+    color: $shelby-gold;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  
+  &:hover .borderEffect {
+    border-color: $shelby-gold;
+  }
+}
+
+.borderEffect {
+  position: absolute;
+  top: -1rem; left: -1rem; right: -1rem; bottom: -1rem;
+  border: 1px solid rgba($shelby-gold, 0.2);
+  transition: border-color 0.7s;
+}
+
+.imageOverflow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba($white, 0.05);
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s;
+  
+  &:hover {
+    filter: grayscale(0) !important;
+  }
+}
+
+.photoActive {
+  opacity: 1;
+  z-index: 20;
+  filter: grayscale(100%);
+}
+
+.photoInactive {
+  opacity: 0;
+  z-index: 10;
+  filter: grayscale(100%);
+}
+
+// Corners
+.cornerTL, .cornerTR, .cornerBL, .cornerBR {
+  position: absolute;
+  width: 1.5rem; // w-6
+  height: 1.5rem; // h-6
+  border-color: $shelby-gold;
+  opacity: 0.6;
+}
+
+.cornerTL { top: -0.25rem; left: -0.25rem; border-top: 2px solid; border-left: 2px solid; }
+.cornerTR { top: -0.25rem; right: -0.25rem; border-top: 2px solid; border-right: 2px solid; }
+.cornerBL { bottom: -0.25rem; left: -0.25rem; border-bottom: 2px solid; border-left: 2px solid; }
+.cornerBR { bottom: -0.25rem; right: -0.25rem; border-bottom: 2px solid; border-right: 2px solid; }
