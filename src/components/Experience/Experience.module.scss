@@ -1,13 +1,13 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@use '../../styles/variables';
+@use '../../styles/mixins';
 
 .experience {
   margin-bottom: 8rem; // mb-32
 }
 
 .sectionTitle {
-  color: $shelby-gold;
-  font-family: $font-serif;
+  color: variables.$shelby-gold;
+  font-family: variables.$font-serif;
   font-size: 1.875rem; // text-3xl
   margin-bottom: 4rem; // mb-16
   text-align: center;
@@ -31,9 +31,9 @@
     left: 1.25rem; // ml-5
     transform: translateX(-1px);
     width: 2px; // w-0.5
-    background: linear-gradient(to bottom, transparent, rgba($shelby-gold, 0.3), transparent);
+    background: linear-gradient(to bottom, transparent, rgba(variables.$shelby-gold, 0.3), transparent);
     
-    @include respond-to($md) {
+    @include mixins.respond-to(variables.$md) {
       left: 50%;
       transform: translateX(-50%);
     }
@@ -46,7 +46,7 @@
   align-items: center;
   justify-content: space-between;
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     justify-content: flex-start;
     
     &:nth-child(odd) {
@@ -68,13 +68,13 @@
   width: 2.5rem; // w-10
   height: 2.5rem; // h-10
   border-radius: 50%;
-  border: 1px solid $shelby-gold;
-  background-color: $shelby-charcoal;
-  color: $shelby-gold;
+  border: 1px solid variables.$shelby-gold;
+  background-color: variables.$shelby-charcoal;
+  color: variables.$shelby-gold;
   flex-shrink: 0;
   z-index: 10;
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     position: absolute;
     left: 50%;
   }
@@ -88,16 +88,16 @@
 .contentCard {
   width: calc(100% - 4rem);
   padding: 1.5rem; // p-6
-  background-color: $shelby-slate;
-  border: 1px solid rgba($white, 0.05);
+  background-color: variables.$shelby-slate;
+  border: 1px solid rgba(variables.$white, 0.05);
   transition: all 0.5s;
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     width: 45%;
   }
   
   &:hover {
-    border-color: rgba($shelby-gold, 0.4);
+    border-color: rgba(variables.$shelby-gold, 0.4);
   }
 }
 
@@ -109,27 +109,27 @@
 }
 
 .companyName {
-  color: $shelby-gold;
-  font-family: $font-serif;
+  color: variables.$shelby-gold;
+  font-family: variables.$font-serif;
   font-size: 1.25rem; // text-xl
 }
 
 .period {
   font-size: 10px; // text-[10px]
   letter-spacing: 0.1em; // tracking-widest
-  color: $shelby-gray;
+  color: variables.$shelby-gray;
   text-transform: uppercase;
 }
 
 .role {
-  color: $shelby-offwhite;
+  color: variables.$shelby-offwhite;
   font-weight: 700; // font-bold
   margin-bottom: 1rem; // mb-4
 }
 
 .highlightsList {
   font-size: 0.875rem; // text-sm
-  color: $shelby-gray;
+  color: variables.$shelby-gray;
   display: flex;
   flex-direction: column;
   gap: 0.5rem; // space-y-2

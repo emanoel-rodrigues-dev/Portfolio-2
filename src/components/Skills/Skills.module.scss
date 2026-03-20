@@ -1,19 +1,19 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@use '../../styles/variables';
+@use '../../styles/mixins';
 
 .skillsSection {
   margin-bottom: 8rem; // mb-32
   display: grid;
   gap: 4rem; // gap-16
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 .sectionTitle {
-  color: $shelby-gold;
-  font-family: $font-serif;
+  color: variables.$shelby-gold;
+  font-family: variables.$font-serif;
   font-size: 1.5rem; // text-2xl
   margin-bottom: 2rem; // mb-8
   text-transform: uppercase;
@@ -39,7 +39,7 @@
   font-weight: 700; // font-bold
   text-transform: uppercase;
   letter-spacing: 0.1em; // tracking-widest
-  color: $shelby-gray;
+  color: variables.$shelby-gray;
   margin-bottom: 0.75rem; // mb-3
 }
 
@@ -51,17 +51,17 @@
 
 .skillTag {
   padding: 0.5rem 1rem; // px-4 py-2
-  background-color: $shelby-slate;
+  background-color: variables.$shelby-slate;
   font-size: 0.875rem; // text-sm
   font-weight: 600; // font-semibold
-  border: 1px solid rgba($white, 0.1);
+  border: 1px solid rgba(variables.$white, 0.1);
 }
 
 // Principles Right Side
 .principlesContainer {
-  background-color: rgba($shelby-gold, 0.05);
+  background-color: rgba(variables.$shelby-gold, 0.05);
   padding: 2.5rem; // p-10
-  border-left: 1px solid rgba($shelby-gold, 0.2);
+  border-left: 1px solid rgba(variables.$shelby-gold, 0.2);
   position: relative;
 }
 
@@ -78,8 +78,8 @@
 }
 
 .principleId {
-  color: $shelby-gold;
-  font-family: $font-serif;
+  color: variables.$shelby-gold;
+  font-family: variables.$font-serif;
   font-size: 1.5rem; // text-2xl
   font-style: italic;
   flex-shrink: 0;
@@ -88,12 +88,12 @@
 .principleTitle {
   display: block;
   font-weight: 700; // font-bold
-  color: $shelby-offwhite;
+  color: variables.$shelby-offwhite;
 }
 
 .principleDesc {
   font-size: 0.875rem; // text-sm
-  color: $shelby-gray;
+  color: variables.$shelby-gray;
   margin-top: 0.25rem;
 }
 
@@ -103,7 +103,7 @@
   right: -1.5rem; // -right-6
   width: 6rem; // w-24
   height: 6rem; // h-24
-  border: 1px solid rgba($shelby-gold, 0.2);
+  border: 1px solid rgba(variables.$shelby-gold, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -116,6 +116,6 @@
     letter-spacing: -0.05em; // tracking-tighter
     text-align: center;
     line-height: 1;
-    color: rgba($shelby-gold, 0.5);
+    color: rgba(variables.$shelby-gold, 0.5);
   }
 }

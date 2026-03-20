@@ -1,6 +1,8 @@
+@use "sass:meta";
+@use "variables";
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&display=swap");
-@import "variables";
-@import "mixins";
+@include meta.load-css("mixins");
 
 * {
   box-sizing: border-box;
@@ -13,16 +15,16 @@ html {
 }
 
 body {
-  background-color: $shelby-charcoal;
-  color: $shelby-offwhite;
-  font-family: $font-sans;
+  background-color: variables.$shelby-charcoal;
+  color: variables.$shelby-offwhite;
+  font-family: variables.$font-sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: $shelby-gold;
-  color: $shelby-charcoal;
+  background-color: variables.$shelby-gold;
+  color: variables.$shelby-charcoal;
 }
 
 a {
@@ -38,15 +40,15 @@ button {
 }
 
 .container {
-  max-width: $max-w-7xl;
+  max-width: variables.$max-w-7xl;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.text-gold { color: $shelby-gold; }
-.text-gray { color: $shelby-gray; }
-.text-offwhite { color: $shelby-offwhite; }
-.font-serif { font-family: $font-serif; }
-.font-sans { font-family: $font-sans; }
-.bg-slate { background-color: $shelby-slate; }
-.bg-charcoal { background-color: $shelby-charcoal; }
+.text-gold { color: variables.$shelby-gold; }
+.text-gray { color: variables.$shelby-gray; }
+.text-offwhite { color: variables.$shelby-offwhite; }
+.font-serif { font-family: variables.$font-serif; }
+.font-sans { font-family: variables.$font-sans; }
+.bg-slate { background-color: variables.$shelby-slate; }
+.bg-charcoal { background-color: variables.$shelby-charcoal; }

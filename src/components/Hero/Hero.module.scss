@@ -1,5 +1,5 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@use '../../styles/variables';
+@use '../../styles/mixins';
 
 .hero {
   position: relative;
@@ -25,7 +25,7 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: linear-gradient(to top, $shelby-charcoal, transparent, $shelby-charcoal);
+  background: linear-gradient(to top, variables.$shelby-charcoal, transparent, variables.$shelby-charcoal);
 }
 
 .content {
@@ -34,37 +34,37 @@
   text-align: center;
   padding: 0 1rem;
   max-width: 56rem; // max-w-4xl
-  @include animate-fade-up;
+  @include mixins.animate-fade-up;
 }
 
 .subtitle {
-  color: $shelby-gold;
-  font-family: $font-serif;
+  color: variables.$shelby-gold;
+  font-family: variables.$font-serif;
   font-style: italic;
   font-size: 1.125rem; // text-lg
   margin-bottom: 0.5rem;
   letter-spacing: 0.025em; // tracking-wide
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     font-size: 1.5rem; // md:text-2xl
   }
 }
 
 .title {
   font-size: 3rem; // text-5xl
-  font-family: $font-serif;
+  font-family: variables.$font-serif;
   text-transform: uppercase;
   letter-spacing: -0.05em; // tracking-tighter
   margin-bottom: 1.5rem;
-  @include text-shadow-gold;
+  @include mixins.text-shadow-gold;
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     font-size: 6rem; // md:text-8xl
   }
 }
 
 .description {
-  color: $shelby-gray;
+  color: variables.$shelby-gray;
   font-size: 1.125rem; // text-lg
   font-weight: 300; // font-light
   margin-bottom: 2.5rem;
@@ -73,13 +73,13 @@
   margin-right: auto;
   line-height: 1.625; // leading-relaxed
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     font-size: 1.5rem; // md:text-2xl
   }
 }
 
 .descriptionHighlight {
-  color: $shelby-offwhite;
+  color: variables.$shelby-offwhite;
   font-style: italic;
 }
 
@@ -100,30 +100,30 @@
 }
 
 .btnPrimary {
-  background-color: $shelby-gold;
-  color: $shelby-charcoal;
+  background-color: variables.$shelby-gold;
+  color: variables.$shelby-charcoal;
   
   &:hover {
-    background-color: $white;
+    background-color: variables.$white;
   }
 }
 
 .btnOutline {
-  border: 1px solid $shelby-gold;
-  color: $shelby-gold;
+  border: 1px solid variables.$shelby-gold;
+  color: variables.$shelby-gold;
   
   &:hover {
-    background-color: $shelby-gold;
-    color: $shelby-charcoal;
+    background-color: variables.$shelby-gold;
+    color: variables.$shelby-charcoal;
   }
 }
 
 .btnSecondary {
-  background-color: rgba($white, 0.05);
-  color: $shelby-offwhite;
+  background-color: rgba(variables.$white, 0.05);
+  color: variables.$shelby-offwhite;
   
   &:hover {
-    background-color: rgba($white, 0.1);
+    background-color: rgba(variables.$white, 0.1);
   }
 }
 
@@ -140,5 +140,5 @@
 .decorationLine {
   width: 1px;
   height: 5rem; // h-20
-  background: linear-gradient(to top, $shelby-gold, transparent);
+  background: linear-gradient(to top, variables.$shelby-gold, transparent);
 }

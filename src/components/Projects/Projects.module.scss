@@ -1,5 +1,5 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@use '../../styles/variables';
+@use '../../styles/mixins';
 
 .projects {
   margin-bottom: 8rem; // mb-32
@@ -12,33 +12,33 @@
   margin-bottom: 3rem; // mb-12
   gap: 1rem;
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     flex-direction: row;
     align-items: flex-end;
   }
 }
 
 .sectionTitle {
-  color: $shelby-gold;
-  font-family: $font-serif;
+  color: variables.$shelby-gold;
+  font-family: variables.$font-serif;
   font-size: 1.875rem; // text-3xl
   font-style: italic;
 }
 
 .subtitle {
-  color: $shelby-gray;
+  color: variables.$shelby-gray;
   margin-top: 0.5rem; // mt-2
 }
 
 .headerLine {
   display: none; // hidden
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     display: block; // md:block
     height: 1px;
     flex-grow: 1;
     margin: 0 2rem; // mx-8
-    background-color: rgba($shelby-gold, 0.2);
+    background-color: rgba(variables.$shelby-gold, 0.2);
   }
 }
 
@@ -46,23 +46,23 @@
   display: grid;
   gap: 2rem; // gap-8
   
-  @include respond-to($md) {
+  @include mixins.respond-to(variables.$md) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 .projectCard {
-  background-color: $shelby-slate;
-  border-left: 4px solid rgba($shelby-gold, 0.3);
+  background-color: variables.$shelby-slate;
+  border-left: 4px solid rgba(variables.$shelby-gold, 0.3);
   padding: 2rem; // p-8
   transition: all 0.3s;
   
   &:hover {
-    background-color: rgba($white, 0.05);
-    border-color: $shelby-gold;
+    background-color: rgba(variables.$white, 0.05);
+    border-color: variables.$shelby-gold;
     
     .title {
-      color: $shelby-gold;
+      color: variables.$shelby-gold;
     }
   }
 }
@@ -70,21 +70,21 @@
 .category {
   font-size: 10px; // text-[10px]
   letter-spacing: 0.3em; // tracking-[0.3em]
-  color: $shelby-gold;
+  color: variables.$shelby-gold;
   text-transform: uppercase;
   font-weight: 700; // font-bold
 }
 
 .title {
   font-size: 1.5rem; // text-2xl
-  font-family: $font-serif;
+  font-family: variables.$font-serif;
   margin-top: 0.5rem; // mt-2
   margin-bottom: 1rem; // mb-4
   transition: color 0.3s;
 }
 
 .description {
-  color: $shelby-gray;
+  color: variables.$shelby-gray;
   font-size: 0.875rem; // text-sm
   line-height: 1.625; // leading-relaxed
   margin-bottom: 1.5rem; // mb-6
@@ -98,8 +98,8 @@
 
 .tag {
   padding: 0.25rem 0.75rem; // px-3 py-1
-  background-color: rgba($white, 0.05);
+  background-color: rgba(variables.$white, 0.05);
   font-size: 10px; // text-[10px]
   text-transform: uppercase;
-  border: 1px solid rgba($white, 0.1);
+  border: 1px solid rgba(variables.$white, 0.1);
 }

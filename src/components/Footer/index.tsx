@@ -18,7 +18,12 @@ export function Footer() {
           </div>
           <div className={styles.contactGroup}>
             <span className={styles.contactLabel}>Telefone / WhatsApp</span>
-            <a className={styles.contactLink} href="tel:+5588981283896">
+            <a 
+              className={styles.contactLink} 
+              href="https://wa.me/5588981283896" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               (88) 9 8128-3896
             </a>
           </div>
