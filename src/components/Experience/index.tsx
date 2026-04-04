@@ -8,6 +8,7 @@ const experiences: {
   role: string;
   highlights: string[];
   icon: ReactNode;
+  viewBox?: string;
 }[] = [
   {
     id: 1,
@@ -32,7 +33,8 @@ const experiences: {
       "Padronização de código e melhores práticas.",
       "Realização de Code Reviews e mentoria técnica."
     ],
-    icon: <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+    icon: <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>,
+    viewBox: "0 0 24 24"
   },
   {
     id: 3,
@@ -97,7 +99,8 @@ const experiences: {
       "Trabalho orientado por Scrum e SASS.",
       "Foco em boas práticas de UI/UX para interfaces móveis."
     ],
-    icon: <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"></path>
+    icon: <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"></path>,
+    viewBox: "0 0 24 24"
   }
 ];
 
@@ -109,7 +112,7 @@ export function Experience() {
         {experiences.map((exp) => (
           <div key={exp.id} className={styles.timelineItem}>
             <div className={styles.iconMarker}>
-              <svg className={styles.svgIcon} fill="currentColor" viewBox="0 0 20 20">
+              <svg className={styles.svgIcon} fill="currentColor" viewBox={exp.viewBox || "0 0 20 20"}>
                 {exp.icon}
               </svg>
             </div>

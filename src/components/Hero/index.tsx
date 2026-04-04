@@ -5,7 +5,7 @@ export function Hero() {
     <section className={styles.hero} id="hero">
       <div 
         className={styles.bgImage} 
-        style={{ backgroundImage: "url('/Emanoel-Peaky.png')" }}
+        style={{ backgroundImage: "url('/Emanoel-Novo-Peaky.png')" }}
       ></div>
       <div className={styles.bgGradient}></div>
       

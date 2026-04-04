@@ -4,10 +4,10 @@ import { ProjectCard } from './ProjectCard';
 const projects = [
   {
     id: 1,
-    category: "Inovação",
-    title: "Sistema MAESTRO",
-    description: "Ferramenta integrada voltada à otimização do ciclo de vida do desenvolvimento de software, centralizando processos de engenharia para maior eficiência.",
-    tags: ["Next.js", "Node.js", "PostgreSQL"]
+    category: "Gerenciamento",
+    title: "OSP Manager",
+    description: "Módulo avançado para gerenciamento de redes ópticas GPON, focado em alta disponibilidade e provisionamento eficiente.",
+    tags: ["React", "Next.js", "Java", "Spring"]
   },
   {
     id: 2,

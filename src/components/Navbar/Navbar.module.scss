@@ -33,22 +33,88 @@
   letter-spacing: 0.3em; // tracking-[0.3em]
 }
 
-.navLinks {
-  display: none;
+.menuButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
   
   @include mixins.respond-to(variables.$md) {
-    display: flex;
-    gap: 2rem; // space-x-8
-    font-size: 0.75rem; // text-xs
-    text-transform: uppercase;
-    letter-spacing: 0.1em; // tracking-widest
-    font-weight: 600; // font-semibold
+    display: none;
+  }
+  
+  .hamburgerLine {
+    width: 100%;
+    height: 2px;
+    background-color: variables.$shelby-gold;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+  }
+  
+  &.open .hamburgerLine:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  &.open .hamburgerLine:nth-child(2) {
+    opacity: 0;
+  }
+  
+  &.open .hamburgerLine:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.navLinks {
+  // Mobile layout
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(variables.$shelby-charcoal, 0.98);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  z-index: 9;
+
+  &.active {
+    right: 0;
+  }
+  
+  // Desktop layout
+  @include mixins.respond-to(variables.$md) {
+    position: static;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    backdrop-filter: none;
+    gap: 2rem;
+    font-size: 0.75rem;
+    z-index: auto;
   }
 
   a {
+    color: variables.$shelby-offwhite;
     transition: color 0.3s;
     &:hover {
       color: variables.$shelby-gold;
     }
+    
+    // Fallback if shelby-gray-light is missing, we use default text color or gold on hover
   }
 }

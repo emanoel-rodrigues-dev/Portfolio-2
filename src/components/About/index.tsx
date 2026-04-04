@@ -50,12 +50,12 @@ export function About() {
                 <img 
                   alt="Emanoel Rodrigues - Profissional" 
                   className={`${styles.photo} ${!isPeaky ? styles.photoActive : styles.photoInactive}`}
-                  src="/Emanoel.jpg" 
+                  src="/Emanoel-Novo.jpeg" 
                 />
                 <img 
                   alt="Emanoel Rodrigues - Peaky Blinders" 
                   className={`${styles.photo} ${isPeaky ? styles.photoActive : styles.photoInactive}`}
-                  src="/Emanoel-Peaky.png" 
+                  src="/Emanoel-Novo-Peaky.png" 
                 />
               </div>
               <div className={styles.cornerTL}></div>
