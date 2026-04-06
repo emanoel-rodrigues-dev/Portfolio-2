@@ -45,18 +45,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   
   @include mixins.respond-to(variables.$md) {
     justify-content: flex-start;
     
     &:nth-child(odd) {
-      flex-direction: row-reverse;
-      
-      .iconMarker { transform: translateX(50%); }
-    }
-    
-    &:nth-child(even) {
-      .iconMarker { transform: translateX(-50%); }
+      justify-content: flex-end;
     }
   }
 }
@@ -77,6 +72,7 @@
   @include mixins.respond-to(variables.$md) {
     position: absolute;
     left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -93,7 +89,7 @@
   transition: all 0.5s;
   
   @include mixins.respond-to(variables.$md) {
-    width: 45%;
+    width: calc(50% - 3rem);
   }
   
   &:hover {

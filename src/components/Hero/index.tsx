@@ -8,7 +8,7 @@ export function Hero() {
         style={{ backgroundImage: "url('/Emanoel-Novo-Peaky.png')" }}
       ></div>
       <div className={styles.bgGradient}></div>
-      
+       
       <div className={styles.content}>
         <h2 className={styles.subtitle}>Pela Ordem do Código</h2>
         <h1 className={styles.title}>Emanoel Rodrigues</h1>
