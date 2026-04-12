@@ -139,7 +139,12 @@
   width: 100%;
   aspect-ratio: 4 / 5;
   
-  &:hover .borderEffect {
+  @media (hover: hover) {
+    &:hover .borderEffect {
+      border-color: variables.$shelby-gold;
+    }
+  }
+  &:active .borderEffect {
     border-color: variables.$shelby-gold;
   }
 }
@@ -168,7 +173,13 @@
   object-fit: cover;
   transition: all 1s;
   
-  &:hover {
+  @media (hover: hover) {
+    &:hover {
+      filter: grayscale(100%) !important;
+    }
+  }
+  
+  &:active {
     filter: grayscale(100%) !important;
   }
 }
