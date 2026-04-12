@@ -3,15 +3,19 @@ import styles from './Skills.module.scss';
 const skills = [
   {
     category: "Front-end",
-    items: ["React / Next.js", "TypeScript", "Tailwind CSS", "Zustand / Redux"]
+    items: ["React / Next.js", "TypeScript", "SASS / UI Design", "Angular / Redux"]
   },
   {
-    category: "Back-end",
-    items: ["Node.js", "Java / Spring Boot", "REST APIs"]
+    category: "Back-end & Arquitetura",
+    items: ["Java / Spring Boot", "Node.js", "REST APIs", "Arquitetura de Software", "WebSockets / Tempo Real"]
   },
   {
-    category: "Ferramentas",
-    items: ["Docker", "Git", "Linux"]
+    category: "Ferramentas & Infra",
+    items: ["Docker", "Git", "Linux", "Redes Ópticas / GPON"]
+  },
+  {
+    category: "Metodologias & Liderança",
+    items: ["Scrum / Ágil", "Liderança Técnica", "Code Review", "Product Owner (PO)"]
   }
 ];
 
