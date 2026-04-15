@@ -97,14 +97,36 @@
   letter-spacing: 0.1em;
   font-size: 0.75rem;
   transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnWithIcon {
+  gap: 0.5rem;
+  
+  svg {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  &:hover svg {
+    transform: translateY(3px);
+  }
 }
 
 .btnPrimary {
-  background-color: variables.$shelby-gold;
-  color: variables.$shelby-charcoal;
+  background-color: rgba(variables.$shelby-gold, 0.05);
+  color: variables.$shelby-gold;
+  border: 1px solid rgba(variables.$shelby-gold, 0.8);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(variables.$shelby-gold, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   
   &:hover {
-    background-color: variables.$white;
+    background-color: variables.$shelby-gold;
+    color: variables.$shelby-charcoal;
+    border-color: variables.$shelby-gold;
+    box-shadow: 0 0 25px rgba(variables.$shelby-gold, 0.4);
   }
 }
 
@@ -119,11 +141,15 @@
 }
 
 .btnSecondary {
-  background-color: rgba(variables.$white, 0.05);
+  background-color: transparent;
   color: variables.$shelby-offwhite;
+  border: 1px solid rgba(variables.$white, 0.3);
+  transition: all 0.3s;
   
   &:hover {
-    background-color: rgba(variables.$white, 0.1);
+    background-color: variables.$shelby-offwhite;
+    color: variables.$shelby-charcoal;
+    border-color: variables.$shelby-offwhite;
   }
 }
 
