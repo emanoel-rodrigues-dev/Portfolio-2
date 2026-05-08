@@ -10,12 +10,12 @@ export function Hero() {
       <div className={styles.bgGradient}></div>
        
       <div className={styles.content}>
-        <h2 className={styles.subtitle}>Pela Ordem do Código</h2>
+        <h2 className={styles.subtitle}>React, Angular e Java</h2>
         <h1 className={styles.title}>Emanoel Rodrigues</h1>
         <p className={styles.description}>
-          Full Stack Developer & Front-end Tech Lead.<br />
+          Desenvolvedor Full Stack com 3 anos de experiência em produção.<br />
           <span className={styles.descriptionHighlight}>
-            Construindo aplicações web modernas, escaláveis e orientadas a resultados.
+            Front-end ao back-end com foco em qualidade, performance e escalabilidade.
           </span>
         </p>
         

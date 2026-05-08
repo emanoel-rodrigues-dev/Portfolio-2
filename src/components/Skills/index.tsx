@@ -2,38 +2,46 @@ import styles from './Skills.module.scss';
 
 const skills = [
   {
-    category: "Front-end",
-    items: ["React / Next.js", "TypeScript", "SASS / UI Design", "Angular / Redux"]
+    category: "React & Ecossistema",
+    items: ["React.js", "Next.js", "Hooks customizados", "Context API", "Redux", "Styled Components", "React Query"]
   },
   {
-    category: "Back-end & Arquitetura",
-    items: ["Java / Spring Boot", "Node.js", "REST APIs", "Arquitetura de Software", "WebSockets / Tempo Real"]
+    category: "Angular & Ecossistema",
+    items: ["Angular v6-19", "Angular CLI", "RxJS", "Guards", "Interceptors HTTP", "Formulários reativos", "Lazy loading"]
   },
   {
-    category: "Ferramentas & Infra",
-    items: ["Docker", "Git", "Linux", "Redes Ópticas / GPON"]
+    category: "Linguagens & UI",
+    items: ["JavaScript ES6+", "TypeScript", "HTML5 semântico", "CSS3", "SCSS/SASS", "Programação funcional", "UI/UX"]
   },
   {
-    category: "Metodologias & Liderança",
-    items: ["Scrum / Ágil", "Liderança Técnica", "Code Review", "Product Owner (PO)"]
+    category: "Back-end & Dados",
+    items: ["Java 8+", "Spring Boot", "APIs RESTful", "JWT", "MySQL", "Firebase", "Microsserviços"]
+  },
+  {
+    category: "Qualidade, Segurança & Web",
+    items: ["TDD", "Jest", "Jasmine", "Karma", "ARIA/WCAG", "XSS/SQLi", "SEO", "WebSocket"]
+  },
+  {
+    category: "DevOps & Metodologias",
+    items: ["Docker", "Git/GitHub", "GitHub Actions", "Linux", "Scrum", "Kanban", "Copilot", "ChatGPT"]
   }
 ];
 
 const principles = [
   {
     id: "01.",
-    title: "Simplicidade é Chave",
-    description: "Código limpo e legível é prioridade sobre soluções excessivamente complexas."
+    title: "Aprendizado Rápido",
+    description: "Capacidade comprovada de absorver novas stacks e aplicá-las em produção com autonomia."
   },
   {
     id: "02.",
-    title: "Foco em Performance",
-    description: "Aplicações devem ser rápidas e eficientes por natureza, não por correção posterior."
+    title: "Qualidade em Produção",
+    description: "TDD, code review, performance, acessibilidade e segurança como parte natural da entrega."
   },
   {
     id: "03.",
-    title: "Escalabilidade",
-    description: "Arquiteturas pensadas para crescer sem comprometer a estabilidade."
+    title: "Visão de Produto",
+    description: "Colaboração próxima com designers, POs e engenharia para resolver problemas reais de negócio."
   }
 ];
 

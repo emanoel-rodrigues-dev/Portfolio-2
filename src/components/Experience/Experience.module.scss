@@ -87,6 +87,7 @@
   background-color: variables.$shelby-slate;
   border: 1px solid rgba(variables.$white, 0.05);
   transition: all 0.5s;
+  overflow-wrap: anywhere;
   
   @include mixins.respond-to(variables.$md) {
     width: calc(50% - 3rem);
@@ -101,6 +102,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
   margin-bottom: 0.5rem; // mb-2
 }
 
@@ -108,6 +111,7 @@
   color: variables.$shelby-gold;
   font-family: variables.$font-serif;
   font-size: 1.25rem; // text-xl
+  line-height: 1.2;
 }
 
 .period {

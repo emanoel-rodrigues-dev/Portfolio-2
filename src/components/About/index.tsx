@@ -12,18 +12,18 @@ export function About() {
             <span className={styles.titleLine}></span> Sobre Mim
           </h3>
           <div className={styles.description}>
-            <p>Graduado em Análise e Desenvolvimento de Sistemas, sou um <span className={styles.highlight}>Desenvolvedor Full Stack</span> apaixonado por arquitetura limpa e performance.</p>
-            <p>Com sólida experiência em ecossistemas modernos como <span className={styles.goldHighlight}>React, Next.js, TypeScript e Spring Boot</span>, atuo liderando frentes técnicas de front-end, garantindo que a entrega não seja apenas funcional, mas excepcional em termos de engenharia.</p>
-            <p>Meu foco é a escalabilidade. Acredito que o código bem escrito é como uma alfaiataria sob medida: preciso, elegante e feito para durar.</p>
+            <p>Sou <span className={styles.highlight}>Desenvolvedor Full Stack</span> com 3 anos de experiência em projetos reais de produção, atuando do front-end ao back-end com foco em qualidade, performance e escalabilidade.</p>
+            <p>No front-end, trabalho com <span className={styles.goldHighlight}>React.js, Next.js, Angular v6-19 e TypeScript</span>, criando SPAs responsivas, acessíveis e cross-browser com Design Systems, TDD e boas práticas de UI/UX.</p>
+            <p>No back-end, desenvolvo com Java e Spring Boot, APIs RESTful seguras com JWT, integração com MySQL e Firebase, Docker, CI/CD com GitHub Actions e Git. Também estudo Análise e Desenvolvimento de Sistemas e Redes de Computadores no IFCE.</p>
           </div>
           <div className={styles.rolesGrid}>
             <div className={styles.roleCard}>
-              <span className={styles.roleTitle}>Tech Lead</span>
-              <span className={styles.roleSubtitle}>Front-end Specialist</span>
+              <span className={styles.roleTitle}>Full Stack</span>
+              <span className={styles.roleSubtitle}>React, Angular & Java</span>
             </div>
             <div className={styles.roleCard}>
-              <span className={styles.roleTitle}>Full Stack</span>
-              <span className={styles.roleSubtitle}>Java & TypeScript</span>
+              <span className={styles.roleTitle}>Qualidade</span>
+              <span className={styles.roleSubtitle}>TDD, CI/CD & Segurança</span>
             </div>
           </div>
         </div>
