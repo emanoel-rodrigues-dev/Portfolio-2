@@ -6,7 +6,7 @@ interface ProjectCardProps {
     title: string;
     description: string;
     tags: string[];
-  }
+  };
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {

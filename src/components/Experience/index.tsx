@@ -12,22 +12,21 @@ const experiences: {
 }[] = [
   {
     id: 1,
-    company: "DARM / Furukawa / Lightera",
+    company: "DARM / Furukawa / Lightera (Plataforma OSP)",
     period: "Dez 2024 - Atual",
     role: "Desenvolvedor Full Stack",
     highlights: [
-      "Desenvolvimento full stack com React.js, Angular 19 e Java/Spring Boot em plataformas críticas de negócio.",
-      "Implementação de guards, interceptors HTTP com JWT, formulários reativos, lazy loading e rotas avançadas.",
-      "TDD com Jest/Jasmine, code review, otimização de performance e boas práticas de segurança contra XSS e SQLi.",
-      "Integração com APIs RESTful, WebSocket, MySQL, Firebase, Docker, Git/GitHub e CI/CD com GitHub Actions.",
-      "Uso de GitHub Copilot e ChatGPT para acelerar entregas e elevar a qualidade do código."
+      "Atuação full stack na Plataforma OSP, módulo da Furukawa / Lightera voltado ao gerenciamento de redes GPON e redes ópticas.",
+      "Desenvolvimento com React.js, Angular 19 e Java/Spring Boot, integrando interfaces, APIs RESTful/WebSocket e regras de negócio.",
+      "Integração com MySQL, Docker, Git/GitHub e controle de versionamento.",
+      "Code review, testes com Jest/Jasmine e otimização de performance."
     ],
     icon: <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
   },
   {
     id: 2,
     company: "DARM Labs",
-    period: "Nov 2024 - Atual",
+    period: "Nov 2025 - Atual",
     role: "Líder Técnico de Front-End",
     highlights: [
       "Definição de arquitetura front-end, padrões de componentização, Design System e estratégias de qualidade.",
@@ -43,9 +42,9 @@ const experiences: {
     period: "Jul 2024 - Jul 2025",
     role: "Desenvolvedor Front-End",
     highlights: [
-      "Criação de SPAs com React.js, Next.js e TypeScript, usando Redux, hooks customizados, Context API e Styled Components.",
-      "Aplicação de TDD com Jest, SEO com Next.js, HTML semântico e performance de carregamento.",
-      "Integração com Firebase, CI/CD com GitHub Actions, Docker, Git e uso ativo de IA no desenvolvimento."
+      "Desenvolvimento front-end do MAESTRO, integrando interfaces, fluxos da aplicação e etapas do ciclo de vida de software.",
+      "Projeto do DARM Labs/IFCE voltado a apoiar requisitos, codificação e testes em um ambiente coeso e centralizado.",
+      "Atuação com React.js, Next.js, TypeScript, API REST, Docker, Git e boas práticas de web responsiva."
     ],
     icon: (
       <>
@@ -60,9 +59,9 @@ const experiences: {
     period: "Ago 2024 - Dez 2024",
     role: "Desenvolvedor Front-End",
     highlights: [
-      "Desenvolvimento de plataforma de Business Intelligence e analytics data-driven com React.js e Angular.",
-      "Criação de dashboards, gráficos interativos e métricas de negócio em tempo real.",
-      "Uso de Design System com Angular Material e PrimeNG, SCSS, ARIA e otimização cross-browser."
+      "Desenvolvimento do front-end da plataforma Insights, voltada à análise e processamento de dados em tempo real dos serviços Furukawa.",
+      "Criação de interfaces para visualização clara de métricas operacionais, dashboards e indicadores de sistemas integrados.",
+      "Atuação com React.js, Angular, Design System, SCSS, responsividade e otimização de performance."
     ],
     icon: <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3.005 3.005 0 013.25-2.906z"></path>
   },
@@ -72,21 +71,21 @@ const experiences: {
     period: "Jan 2024 - Dez 2024",
     role: "Desenvolvedor Front-End",
     highlights: [
-      "Plataforma de monitoramento em tempo real com Angular, TypeScript e WebSocket para missão crítica.",
-      "TDD com Jasmine e Karma, manutenção de aplicações legadas, depuração via logs e stack traces.",
-      "Integração com MySQL, segurança em formulários, sanitização de inputs e acessibilidade web."
+      "Atuação com React.js e Angular no front-end do Event Handler, plataforma de monitoramento em tempo real de redes ópticas.",
+      "Interface para visualização de alertas instantâneos de OLTs e ONUs, falhas, quedas de equipamentos e eventos de rede.",
+      "Apoio a fluxos de correlação de eventos, notificações automáticas, testes com Jasmine/Karma e integração com MySQL."
     ],
     icon: <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"></path>
   },
   {
     id: 6,
     company: "BookTrade (Autônomo)",
-    period: "Fev 2024 - Atual",
+    period: "Fev 2024 - Mai 2026",
     role: "Co-criador | PO & Full Stack Developer",
     highlights: [
-      "Produto digital criado do zero: ideação, arquitetura, desenvolvimento, deploy e manutenção.",
-      "Atuação full stack com React.js, Redux, Styled Components, Jest/TDD, Angular, Java, Spring Boot e MySQL.",
-      "Firebase, autenticação JWT, SEO, CI/CD com GitHub Actions e Design System com Angular Material."
+      "Co-criação da plataforma BookTrade, atuando na definição de funcionalidades, organização das entregas e desenvolvimento full stack.",
+      "Solução para venda e troca de livros entre estudantes, com foco em experiência fluida, acessível e contexto acadêmico.",
+      "Desenvolvimento de interfaces, integrações e regras de negócio para conectar estudantes em um ambiente digital colaborativo."
     ],
     icon: <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path>
   },

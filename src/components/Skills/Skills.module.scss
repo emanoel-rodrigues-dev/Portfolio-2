@@ -55,6 +55,18 @@
   font-size: 0.875rem; // text-sm
   font-weight: 600; // font-semibold
   border: 1px solid rgba(variables.$white, 0.1);
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.25s ease;
+
+  &:hover {
+    background-color: rgba(variables.$shelby-gold, 0.08);
+    border-color: rgba(variables.$shelby-gold, 0.42);
+    color: variables.$shelby-offwhite;
+    transform: translateY(-2px);
+  }
 }
 
 // Principles Right Side
@@ -99,8 +111,8 @@
 
 .stamp {
   position: absolute;
-  bottom: -1.5rem; // -bottom-6
-  right: -1.5rem; // -right-6
+  bottom: -1rem;
+  right: 0;
   width: 6rem; // w-24
   height: 6rem; // h-24
   border: 1px solid rgba(variables.$shelby-gold, 0.2);
@@ -113,9 +125,19 @@
   span {
     font-size: 8px; // text-[8px]
     text-transform: uppercase;
-    letter-spacing: -0.05em; // tracking-tighter
+    letter-spacing: 0;
     text-align: center;
     line-height: 1;
     color: rgba(variables.$shelby-gold, 0.5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skillTag {
+    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+
+    &:hover {
+      transform: none;
+    }
   }
 }

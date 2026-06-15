@@ -7,23 +7,23 @@ const skills = [
   },
   {
     category: "Angular & Ecossistema",
-    items: ["Angular v6-19", "Angular CLI", "RxJS", "Guards", "Interceptors HTTP", "Formulários reativos", "Lazy loading"]
+    items: ["Angular v6-19", "Angular CLI", "RxJS", "Formulários reativos", "Lazy loading"]
   },
   {
     category: "Linguagens & UI",
-    items: ["JavaScript ES6+", "TypeScript", "HTML5 semântico", "CSS3", "SCSS/SASS", "Programação funcional", "UI/UX"]
+    items: ["JavaScript", "TypeScript", "HTML5 semântico", "CSS3", "SCSS", "Programação funcional", "UI/UX"]
   },
   {
     category: "Back-end & Dados",
-    items: ["Java 8+", "Spring Boot", "APIs RESTful", "JWT", "MySQL", "Firebase", "Microsserviços"]
+    items: ["Java 8+", "Spring Boot", "APIs RESTful", "MySQL", "Firebase"]
   },
   {
     category: "Qualidade, Segurança & Web",
-    items: ["TDD", "Jest", "Jasmine", "Karma", "ARIA/WCAG", "XSS/SQLi", "SEO", "WebSocket"]
+    items: ["Jest", "Jasmine", "Karma", "ARIA/WCAG", "SEO", "WebSocket"]
   },
   {
-    category: "DevOps & Metodologias",
-    items: ["Docker", "Git/GitHub", "GitHub Actions", "Linux", "Scrum", "Kanban", "Copilot", "ChatGPT"]
+    category: "DevOps, Metodologias & IA",
+    items: ["Docker", "Git/GitHub", "Scrum", "Kanban", "Desenvolvimento com IA"]
   }
 ];
 
@@ -36,7 +36,7 @@ const principles = [
   {
     id: "02.",
     title: "Qualidade em Produção",
-    description: "TDD, code review, performance, acessibilidade e segurança como parte natural da entrega."
+    description: "Code review, testes, performance, acessibilidade e segurança como parte natural da entrega."
   },
   {
     id: "03.",

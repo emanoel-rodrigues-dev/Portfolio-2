@@ -13,8 +13,8 @@ export function About() {
           </h3>
           <div className={styles.description}>
             <p>Sou <span className={styles.highlight}>Desenvolvedor Full Stack</span> com 3 anos de experiência em projetos reais de produção, atuando do front-end ao back-end com foco em qualidade, performance e escalabilidade.</p>
-            <p>No front-end, trabalho com <span className={styles.goldHighlight}>React.js, Next.js, Angular v6-19 e TypeScript</span>, criando SPAs responsivas, acessíveis e cross-browser com Design Systems, TDD e boas práticas de UI/UX.</p>
-            <p>No back-end, desenvolvo com Java e Spring Boot, APIs RESTful seguras com JWT, integração com MySQL e Firebase, Docker, CI/CD com GitHub Actions e Git. Também estudo Análise e Desenvolvimento de Sistemas e Redes de Computadores no IFCE.</p>
+            <p>No front-end, trabalho com <span className={styles.goldHighlight}>React.js, Next.js, Angular v6-19 e TypeScript</span>, criando SPAs responsivas, acessíveis e cross-browser com Design Systems e boas práticas de UI/UX.</p>
+            <p>No back-end, desenvolvo com Java e Spring Boot, APIs RESTful, integração com MySQL e Firebase, Docker e Git. Sou graduado em Análise e Desenvolvimento de Sistemas e graduando em Redes de Computadores.</p>
           </div>
           <div className={styles.rolesGrid}>
             <div className={styles.roleCard}>
@@ -23,7 +23,7 @@ export function About() {
             </div>
             <div className={styles.roleCard}>
               <span className={styles.roleTitle}>Qualidade</span>
-              <span className={styles.roleSubtitle}>TDD, CI/CD & Segurança</span>
+              <span className={styles.roleSubtitle}>Testes & Segurança</span>
             </div>
           </div>
         </div>
