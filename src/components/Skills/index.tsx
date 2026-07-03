@@ -19,7 +19,7 @@ const skills = [
   },
   {
     category: "Qualidade, Segurança & Web",
-    items: ["Jest", "Jasmine", "Karma", "ARIA/WCAG", "SEO", "WebSocket"]
+    items: ["Jest", "Jasmine", "Karma", "Vitest", "Playwright", "WebSocket"]
   },
   {
     category: "DevOps, Metodologias & IA",
@@ -36,7 +36,7 @@ const principles = [
   {
     id: "02.",
     title: "Qualidade em Produção",
-    description: "Code review, testes, performance, acessibilidade e segurança como parte natural da entrega."
+    description: "Code review, testes, performance e segurança como parte natural da entrega."
   },
   {
     id: "03.",

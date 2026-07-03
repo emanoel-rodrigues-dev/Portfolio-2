@@ -42,7 +42,7 @@ const projects = [
     category: "Produto Digital",
     title: "BookTrade",
     description: "Plataforma para venda e troca de livros entre estudantes, criada do zero com atuação em produto, organização de entregas, interfaces, integrações e regras de negócio.",
-    tags: ["React", "Redux", "Angular", "Spring Boot", "Firebase"]
+    tags: ["React", "Redux", "Spring Boot", "Firebase"]
   },
   {
     id: 7,

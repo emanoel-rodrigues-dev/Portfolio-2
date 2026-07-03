@@ -13,25 +13,25 @@ const experiences: {
   {
     id: 1,
     company: "DARM / Furukawa / Lightera (Plataforma OSP)",
-    period: "Dez 2024 - Atual",
+    period: "Dez 2024 - Jul 2026",
     role: "Desenvolvedor Full Stack",
     highlights: [
       "Atuação full stack na Plataforma OSP, módulo da Furukawa / Lightera voltado ao gerenciamento de redes GPON e redes ópticas.",
       "Desenvolvimento com React.js, Angular 19 e Java/Spring Boot, integrando interfaces, APIs RESTful/WebSocket e regras de negócio.",
-      "Integração com MySQL, Docker, Git/GitHub e controle de versionamento.",
-      "Code review, testes com Jest/Jasmine e otimização de performance."
+      "Integração com MySQL, Docker, Git/GitHub e versionamento, contribuindo para fluxos mais organizados e manutenção mais segura.",
+      "Code review, testes com Jest/Jasmine e ajustes de performance para apoiar entregas mais consistentes em ambiente corporativo."
     ],
     icon: <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
   },
   {
     id: 2,
     company: "DARM Labs",
-    period: "Nov 2025 - Atual",
+    period: "Nov 2025 - Jul 2026",
     role: "Líder Técnico de Front-End",
     highlights: [
-      "Definição de arquitetura front-end, padrões de componentização, Design System e estratégias de qualidade.",
-      "Code review sistemático, mentoria informal e investigação de novas tecnologias para React e Angular.",
-      "Colaboração com designers, product owners e engenheiros em cerimônias Scrum com foco em entregas de alto impacto."
+      "Liderança técnica no front-end, apoiando definição de arquitetura, componentização, Design System e padrões de qualidade.",
+      "Code review, mentoria informal e avaliação de alternativas técnicas, contribuindo para decisões mais consistentes do time.",
+      "Alinhamento com designers, product owners e engenheiros em Scrum para transformar requisitos em entregas mais claras e sustentáveis."
     ],
     icon: <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>,
     viewBox: "0 0 24 24"
@@ -84,7 +84,7 @@ const experiences: {
     role: "Co-criador | PO & Full Stack Developer",
     highlights: [
       "Co-criação da plataforma BookTrade, atuando na definição de funcionalidades, organização das entregas e desenvolvimento full stack.",
-      "Solução para venda e troca de livros entre estudantes, com foco em experiência fluida, acessível e contexto acadêmico.",
+      "Solução para venda e troca de livros entre estudantes, com foco em experiência fluida e contexto acadêmico.",
       "Desenvolvimento de interfaces, integrações e regras de negócio para conectar estudantes em um ambiente digital colaborativo."
     ],
     icon: <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path>

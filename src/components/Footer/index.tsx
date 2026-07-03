@@ -30,7 +30,7 @@ export function Footer() {
         </div>
 
         <div className={styles.socialLinks}>
-          <a className={styles.socialLink} href="https://github.com/EmanoelRodrigues-darmlabs" target="_blank" rel="noreferrer">
+          <a className={styles.socialLink} href="https://github.com/emanoel-rodrigues-dev" target="_blank" rel="noreferrer">
             GitHub
           </a>
           <a className={styles.socialLink} href="https://www.linkedin.com/in/emanoel-rodrigues" target="_blank" rel="noreferrer">

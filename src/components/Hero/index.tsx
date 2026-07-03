@@ -36,7 +36,7 @@ export function Hero() {
       <div className={styles.bgGradient}></div>
        
       <div className={styles.content}>
-        <h2 className={styles.subtitle}>React, Angular e Java</h2>
+        <h2 className={styles.subtitle}>React, Angular, TypeScript, Java e Spring Boot</h2>
         <StaggeredText
           as="h1"
           text="Emanoel Rodrigues"
@@ -48,12 +48,12 @@ export function Hero() {
         <p className={styles.description}>
           Desenvolvedor Full Stack com 3 anos de experiência em produção, graduado em Análise e Desenvolvimento de Sistemas e graduando em Redes de Computadores.<br />
           <span className={styles.descriptionHighlight}>
-            Front-end ao back-end com foco em qualidade, performance e escalabilidade.
+            Atuação full stack com React, Angular, Next.js, TypeScript, Java, Spring Boot e APIs REST.
           </span>
         </p>
         
         <div className={styles.actionButtons}>
-          <a className={`${styles.btn} ${styles.btnOutline}`} href="https://github.com/EmanoelRodrigues-darmlabs" target="_blank" rel="noreferrer">GitHub</a>
+          <a className={`${styles.btn} ${styles.btnOutline}`} href="https://github.com/emanoel-rodrigues-dev" target="_blank" rel="noreferrer">GitHub</a>
           <a className={`${styles.btn} ${styles.btnOutline}`} href="https://www.linkedin.com/in/emanoel-rodrigues" target="_blank" rel="noreferrer">LinkedIn</a>
           <a className={`${styles.btn} ${styles.btnOutline}`} href="#contato">Contato</a>
           <div className={styles.resumeOptions} role="group" aria-label="Opções de download do currículo">
