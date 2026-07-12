@@ -13,7 +13,7 @@ export function About() {
           </h3>
           <div className={styles.description}>
             <p>Sou <span className={styles.highlight}>Desenvolvedor Full Stack</span> com 3 anos de experiência em projetos reais de produção, atuando do front-end ao back-end com foco em qualidade, performance e escalabilidade.</p>
-            <p>No front-end, trabalho com <span className={styles.goldHighlight}>React.js, Next.js, Angular v6-19 e TypeScript</span>, criando SPAs responsivas e cross-browser com Design Systems e boas práticas de UI/UX.</p>
+            <p>No front-end, trabalho com <span className={styles.goldHighlight}>React.js, Next.js, Angular e TypeScript</span>, criando SPAs responsivas e cross-browser com Design Systems e boas práticas de UI/UX.</p>
             <p>No back-end, desenvolvo com Java e Spring Boot, APIs RESTful, integração com MySQL e Firebase, Docker e Git. Sou graduado em Análise e Desenvolvimento de Sistemas e graduando em Redes de Computadores.</p>
           </div>
           <div className={styles.rolesGrid}>

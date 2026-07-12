@@ -7,7 +7,7 @@ const skills = [
   },
   {
     category: "Angular & Ecossistema",
-    items: ["Angular v6-19", "Angular CLI", "RxJS", "Formulários reativos", "Lazy loading"]
+    items: ["Angular", "Angular CLI", "RxJS", "Formulários reativos", "Lazy loading"]
   },
   {
     category: "Linguagens & UI",

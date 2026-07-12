@@ -12,8 +12,8 @@ export function Footer() {
         <div className={styles.contactInfo}>
           <div className={styles.contactGroup}>
             <span className={styles.contactLabel}>Email Profissional</span>
-            <a className={styles.contactLink} href="mailto:emanuellegario@gmail.com">
-              emanuellegario@gmail.com
+            <a className={styles.contactLink} href="mailto:contato@emanoelrodrigues.dev">
+              contato@emanoelrodrigues.dev
             </a>
           </div>
           <div className={styles.contactGroup}>

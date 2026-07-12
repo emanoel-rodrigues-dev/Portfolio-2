@@ -6,8 +6,8 @@ const projects = [
     id: 1,
     category: "Plataforma OSP",
     title: "DARM / Furukawa / Lightera",
-    description: "Módulo da Furukawa / Lightera para gerenciamento de redes GPON e redes ópticas, com atuação full stack em React.js, Angular 19, Java/Spring Boot, APIs RESTful/WebSocket e regras de negócio.",
-    tags: ["React", "Angular 19", "Java", "Spring Boot", "WebSocket", "MySQL"]
+    description: "Módulo da Furukawa / Lightera para gerenciamento de redes GPON e redes ópticas, com atuação full stack em React.js, Angular, Java/Spring Boot, APIs RESTful/WebSocket e regras de negócio.",
+    tags: ["React", "Angular", "Java", "Spring Boot", "WebSocket", "MySQL"]
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const projects = [
     category: "Produto Digital",
     title: "BookTrade",
     description: "Plataforma para venda e troca de livros entre estudantes, criada do zero com atuação em produto, organização de entregas, interfaces, integrações e regras de negócio.",
-    tags: ["React", "Redux", "Spring Boot", "Firebase"]
+    tags: ["React", "Spring Boot", "Firebase"]
   },
   {
     id: 7,
