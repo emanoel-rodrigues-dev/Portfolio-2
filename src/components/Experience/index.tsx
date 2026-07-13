@@ -25,6 +25,23 @@ const experiences: {
   },
   {
     id: 2,
+    company: "Projetos Sob Demanda",
+    period: "2024 - Atual",
+    role: "Desenvolvedor Full Stack",
+    highlights: [
+      "Desenvolvimento de sistemas web sob demanda para gestão clínica, licitações, controle comercial, estoque, PDV e relatórios.",
+      "Atuação full stack em levantamento, interfaces, regras de negócio, integrações, deploy e ajustes com usuários reais.",
+      "Entregas envolvendo projetos como UpClinic, UpLicita e Jôjô Make, com foco em operação, organização de processos e tomada de decisão."
+    ],
+    icon: (
+      <>
+        <path d="M4 4a2 2 0 012-2h3.586A2 2 0 0111 2.586L15.414 7A2 2 0 0116 8.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path>
+        <path d="M8 12a1 1 0 100 2h4a1 1 0 100-2H8z"></path>
+      </>
+    )
+  },
+  {
+    id: 3,
     company: "DARM Labs",
     period: "Nov 2025 - Jul 2026",
     role: "Líder Técnico de Front-End",
@@ -37,7 +54,7 @@ const experiences: {
     viewBox: "0 0 24 24"
   },
   {
-    id: 3,
+    id: 4,
     company: "DARM Labs (Projeto MAESTRO)",
     period: "Jul 2024 - Jul 2025",
     role: "Desenvolvedor Front-End",
@@ -54,7 +71,7 @@ const experiences: {
     )
   },
   {
-    id: 4,
+    id: 5,
     company: "DARM / Furukawa / Lightera (Plataforma Insights)",
     period: "Ago 2024 - Dez 2024",
     role: "Desenvolvedor Front-End",
@@ -66,7 +83,7 @@ const experiences: {
     icon: <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3.005 3.005 0 013.25-2.906z"></path>
   },
   {
-    id: 5,
+    id: 6,
     company: "DARM / Furukawa / Lightera (Event Handler)",
     period: "Jan 2024 - Dez 2024",
     role: "Desenvolvedor Front-End",
@@ -78,7 +95,7 @@ const experiences: {
     icon: <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"></path>
   },
   {
-    id: 6,
+    id: 7,
     company: "BookTrade (Autônomo)",
     period: "Fev 2024 - Mai 2026",
     role: "Co-criador | PO & Full Stack Developer",
@@ -90,7 +107,7 @@ const experiences: {
     icon: <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path>
   },
   {
-    id: 7,
+    id: 8,
     company: "DARM Labs",
     period: "Ago 2023 - Set 2023",
     role: "Trainee Mobile Developer",
