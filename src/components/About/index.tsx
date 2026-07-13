@@ -23,7 +23,7 @@ export function About() {
             </div>
             <div className={styles.roleCard}>
               <span className={styles.roleTitle}>Qualidade</span>
-              <span className={styles.roleSubtitle}>Testes & Segurança</span>
+              <span className={styles.roleSubtitle}>Testes & Performance</span>
             </div>
           </div>
         </div>

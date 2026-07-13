@@ -3,8 +3,8 @@ import { StaggeredText } from '../ReactBits/StaggeredText';
 
 const resumeOptions = [
   {
-    href: '/curriculo-mestre-ats.pdf',
-    download: 'Emanoel_Rodrigues_Curriculo_Mestre_ATS.pdf',
+    href: '/curriculo-detalhado.pdf',
+    download: 'Emanoel_Rodrigues_Curriculo_Detalhado.pdf',
     label: 'Currículo detalhado',
     detail: 'Mais descritivo',
   },
@@ -46,7 +46,7 @@ export function Hero() {
           stepDelay={34}
         />
         <p className={styles.description}>
-          Desenvolvedor Full Stack com 3 anos de experiência em produção, graduado em Análise e Desenvolvimento de Sistemas e graduando em Redes de Computadores.<br />
+          Desenvolvedor Full Stack com 3 anos de experiência em produção, graduado em Análise e Desenvolvimento de Sistemas e graduando em Redes de Computadores.<br />{' '}
           <span className={styles.descriptionHighlight}>
             Atuação full stack com React, Angular, Next.js, TypeScript, Java, Spring Boot e APIs REST.
           </span>

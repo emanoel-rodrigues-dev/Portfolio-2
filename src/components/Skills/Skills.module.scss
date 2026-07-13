@@ -2,9 +2,9 @@
 @use '../../styles/mixins';
 
 .skillsSection {
-  margin-bottom: 8rem; // mb-32
+  margin-bottom: 8rem;
   display: grid;
-  gap: 4rem; // gap-16
+  gap: 4rem;
   
   @include mixins.respond-to(variables.$md) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -14,14 +14,12 @@
 .sectionTitle {
   color: variables.$shelby-gold;
   font-family: variables.$font-serif;
-  font-size: 1.5rem; // text-2xl
-  margin-bottom: 2rem; // mb-8
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em; // tracking-widest
+  letter-spacing: 0.1em;
   font-style: italic;
 }
-
-// Skills Left Side
 .skillsContainer {
   display: flex;
   flex-direction: column;
@@ -30,30 +28,30 @@
 .skillsList {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; // space-y-6
+  gap: 1.5rem;
 }
 
 .skillCategory {
   display: block;
-  font-size: 0.75rem; // text-xs
-  font-weight: 700; // font-bold
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em; // tracking-widest
+  letter-spacing: 0.1em;
   color: variables.$shelby-gray;
-  margin-bottom: 0.75rem; // mb-3
+  margin-bottom: 0.75rem;
 }
 
 .skillTags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem; // gap-3
+  gap: 0.75rem;
 }
 
 .skillTag {
-  padding: 0.5rem 1rem; // px-4 py-2
+  padding: 0.5rem 1rem;
   background-color: variables.$shelby-slate;
-  font-size: 0.875rem; // text-sm
-  font-weight: 600; // font-semibold
+  font-size: 0.875rem;
+  font-weight: 600;
   border: 1px solid rgba(variables.$white, 0.1);
   transition:
     border-color 0.25s ease,
@@ -68,11 +66,9 @@
     transform: translateY(-2px);
   }
 }
-
-// Principles Right Side
 .principlesContainer {
   background-color: rgba(variables.$shelby-gold, 0.05);
-  padding: 2.5rem; // p-10
+  padding: 2.5rem;
   border-left: 1px solid rgba(variables.$shelby-gold, 0.2);
   position: relative;
 }
@@ -80,31 +76,31 @@
 .principlesList {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; // space-y-6
+  gap: 1.5rem;
   list-style: none;
 }
 
 .principleItem {
   display: flex;
-  gap: 1rem; // gap-4
+  gap: 1rem;
 }
 
 .principleId {
   color: variables.$shelby-gold;
   font-family: variables.$font-serif;
-  font-size: 1.5rem; // text-2xl
+  font-size: 1.5rem;
   font-style: italic;
   flex-shrink: 0;
 }
 
 .principleTitle {
   display: block;
-  font-weight: 700; // font-bold
+  font-weight: 700;
   color: variables.$shelby-offwhite;
 }
 
 .principleDesc {
-  font-size: 0.875rem; // text-sm
+  font-size: 0.875rem;
   color: variables.$shelby-gray;
   margin-top: 0.25rem;
 }
@@ -113,8 +109,8 @@
   position: absolute;
   bottom: -1rem;
   right: 0;
-  width: 6rem; // w-24
-  height: 6rem; // h-24
+  width: 6rem;
+  height: 6rem;
   border: 1px solid rgba(variables.$shelby-gold, 0.2);
   border-radius: 50%;
   display: flex;
@@ -123,7 +119,7 @@
   transform: rotate(12deg);
   
   span {
-    font-size: 8px; // text-[8px]
+    font-size: 8px;
     text-transform: uppercase;
     letter-spacing: 0;
     text-align: center;

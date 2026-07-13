@@ -17,7 +17,7 @@ const experiences: {
     role: "Desenvolvedor Full Stack",
     highlights: [
       "Atuação full stack na Plataforma OSP, módulo da Furukawa / Lightera voltado ao gerenciamento de redes GPON e redes ópticas.",
-      "Desenvolvimento com React.js, Angular e Java/Spring Boot, integrando interfaces, APIs RESTful/WebSocket e regras de negócio.",
+      "Desenvolvimento com React.js, Redux, Angular e Java/Spring Boot, integrando interfaces, APIs RESTful/WebSocket e regras de negócio.",
       "Integração com MySQL, Docker, Git/GitHub e versionamento, contribuindo para fluxos mais organizados e manutenção mais segura.",
       "Code review, testes com Jest/Jasmine e ajustes de performance para apoiar entregas mais consistentes em ambiente corporativo."
     ],

@@ -15,10 +15,10 @@ const skills = [
   },
   {
     category: "Back-end & Dados",
-    items: ["Java 8+", "Spring Boot", "APIs RESTful", "MySQL", "Firebase"]
+    items: ["Java", "Spring Boot", "APIs RESTful", "MySQL", "Firebase"]
   },
   {
-    category: "Qualidade, Segurança & Web",
+    category: "Qualidade & Web",
     items: ["Jest", "Jasmine", "Karma", "Vitest", "Playwright", "WebSocket"]
   },
   {
@@ -36,7 +36,7 @@ const principles = [
   {
     id: "02.",
     title: "Qualidade em Produção",
-    description: "Code review, testes, performance e segurança como parte natural da entrega."
+    description: "Code review, testes e performance como parte natural da entrega."
   },
   {
     id: "03.",
