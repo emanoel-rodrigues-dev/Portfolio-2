@@ -119,26 +119,7 @@
   flex: 1 1 100%;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
   gap: 1rem;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1px;
-    height: 2.6rem;
-    pointer-events: none;
-    background: linear-gradient(
-      to bottom,
-      transparent,
-      rgba(variables.$shelby-gold, 0.8),
-      transparent
-    );
-    opacity: 0.75;
-    transform: translate(-50%, -50%);
-  }
 
   @include mixins.respond-to(variables.$md) {
     gap: 1.25rem;
@@ -174,9 +155,9 @@
 }
 
 .resumeBtn {
-  flex: 1 1 8.75rem;
+  flex: 1 1 12rem;
   min-width: 0;
-  max-width: 10.25rem;
+  max-width: 13rem;
   min-height: 3.25rem;
   padding: 0.65rem 0.75rem;
 

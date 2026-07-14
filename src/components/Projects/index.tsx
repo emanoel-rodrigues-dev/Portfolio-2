@@ -33,13 +33,14 @@ const projects = [
     category: "Gestão Comercial",
     title: "Jôjô Make",
     kind: "Freelancer",
+    period: "Jun - Jul 2026",
     image: "/cases/jojo-make-dashboard.png",
     imageWebp: "/cases/jojo-make-dashboard.webp",
     imageAlt: "Dashboard do sistema Jôjô Make com painel de produtos, estoque baixo, pagamentos e navegação por módulos",
     description: "Sistema para gestão e venda de cosméticos consignados ou distribuídos em farmácias, com controle de produtos, estoque por farmácia, movimentações, vendas, pagamentos e relatórios.",
     role: "Atuação no desenvolvimento de fluxos administrativos, controle por perfil, PDV vinculado à farmácia, integração com Supabase e rotinas de baixa automática de estoque.",
     outcome: "Produto operacional para acompanhar onde cada item está, quanto vendeu em cada farmácia e valores ainda a receber.",
-    tags: ["React", "TypeScript", "Supabase", "TanStack Query", "Recharts"]
+    tags: ["React", "TypeScript", "Supabase", "TanStack Query"]
   },
   {
     id: 4,

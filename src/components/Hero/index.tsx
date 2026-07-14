@@ -1,20 +1,12 @@
 import styles from './Hero.module.scss';
 import { StaggeredText } from '../ReactBits/StaggeredText';
 
-const resumeOptions = [
-  {
-    href: '/curriculo-detalhado.pdf',
-    download: 'Emanoel_Rodrigues_Curriculo_Detalhado.pdf',
-    label: 'Currículo detalhado',
-    detail: 'Mais descritivo',
-  },
-  {
-    href: '/curriculo-resumido.pdf',
-    download: 'Emanoel_Rodrigues_Curriculo_Resumido.pdf',
-    label: 'Currículo resumido',
-    detail: 'Versão curta',
-  },
-];
+const resume = {
+  href: '/curriculo-resumido.pdf',
+  download: 'Emanoel_Rodrigues.pdf',
+  label: 'Baixar currículo',
+  detail: 'Versão principal',
+};
 
 function DownloadIcon() {
   return (
@@ -56,22 +48,19 @@ export function Hero() {
           <a className={`${styles.btn} ${styles.btnOutline}`} href="https://github.com/emanoel-rodrigues-dev" target="_blank" rel="noreferrer">GitHub</a>
           <a className={`${styles.btn} ${styles.btnOutline}`} href="https://www.linkedin.com/in/emanoel-rodrigues" target="_blank" rel="noreferrer">LinkedIn</a>
           <a className={`${styles.btn} ${styles.btnOutline}`} href="#contato">Contato</a>
-          <div className={styles.resumeOptions} role="group" aria-label="Opções de download do currículo">
-            {resumeOptions.map((resume) => (
-              <a
-                key={resume.href}
-                className={`${styles.btn} ${styles.btnPrimary} ${styles.btnWithIcon} ${styles.resumeBtn}`}
-                href={resume.href}
-                download={resume.download}
-                aria-label={`Baixar ${resume.label}`}
-              >
-                <DownloadIcon />
-                <span className={styles.resumeText}>
-                  <span>{resume.label}</span>
-                  <small>{resume.detail}</small>
-                </span>
-              </a>
-            ))}
+          <div className={styles.resumeOptions}>
+            <a
+              className={`${styles.btn} ${styles.btnPrimary} ${styles.btnWithIcon} ${styles.resumeBtn}`}
+              href={resume.href}
+              download={resume.download}
+              aria-label="Baixar currículo"
+            >
+              <DownloadIcon />
+              <span className={styles.resumeText}>
+                <span>{resume.label}</span>
+                <small>{resume.detail}</small>
+              </span>
+            </a>
           </div>
         </div>
       </div>

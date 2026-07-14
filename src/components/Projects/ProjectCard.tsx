@@ -7,6 +7,7 @@ interface ProjectCardProps {
     category: string;
     title: string;
     kind: string;
+    period?: string;
     image?: string;
     imageWebp?: string;
     imageAlt?: string;
@@ -58,7 +59,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
     <article className={styles.projectCard}>
       <div className={styles.cardHeader}>
         <span className={styles.category}>{project.category}</span>
-        <span className={styles.kind}>{project.kind}</span>
+        <div className={styles.metaGroup}>
+          {project.period && <span className={styles.period}>{project.period}</span>}
+          <span className={styles.kind}>{project.kind}</span>
+        </div>
       </div>
       {project.image && (
         <>
